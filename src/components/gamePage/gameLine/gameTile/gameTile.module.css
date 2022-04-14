@@ -1,0 +1,34 @@
+.space {
+    box-sizing: border-box;
+    border: 1px black solid;
+    background: black;
+    width: 20px;
+    height: 20px;
+}
+
+.gateSpace {
+    box-sizing: border-box;
+    background: black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gate{
+    width: 20px;
+    background: wheat;
+    height: 2px;
+}
+
+.wall {
+    box-sizing: border-box;
+    background-image: url("https://preview.redd.it/r28nmgaqhyy11.png?width=640&format=png&auto=webp&s=03e773a6929f4380987c40f5c4e922fe8c13ea2a");
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.image {
+    width: 20px;
+    height: 20px;
+}

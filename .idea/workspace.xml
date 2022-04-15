@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf5afd55-2d5c-428a-b563-16a2bd2729c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/initialState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/initialState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/gameTile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/gameTile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/gameMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/gameMap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
       <workItem from="1649929212473" duration="3215000" />
       <workItem from="1649932797572" duration="374000" />
       <workItem from="1649941704432" duration="2614000" />
+      <workItem from="1650003119685" duration="2834000" />
     </task>
     <servers />
   </component>

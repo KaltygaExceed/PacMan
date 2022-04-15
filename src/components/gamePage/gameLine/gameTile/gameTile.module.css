@@ -4,17 +4,22 @@
     background: black;
     width: 20px;
     height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.gateSpace {
+.enemySpace {
     box-sizing: border-box;
-    background: black;
+    background-image: url("https://star-hunter.ru/wp-content/uploads/2015/04/star-space-tile.jpg");
+    background-size: 20px;
     width: 20px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .gate{
     width: 20px;
     background: wheat;
@@ -31,4 +36,27 @@
 .image {
     width: 20px;
     height: 20px;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: wheat;
+}
+
+.bigDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: wheat;
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 0.4s;
+}
+
+@keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0; }
 }

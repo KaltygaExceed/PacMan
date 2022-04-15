@@ -60,3 +60,10 @@
     from { opacity: 1.0; }
     to { opacity: 0; }
 }
+
+.pacman {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: yellow;
+}

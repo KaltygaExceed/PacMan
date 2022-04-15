@@ -8,7 +8,7 @@ const GameLine = ({tiles}) => {
         <div className={style.line}>
             {
                 tiles.map(tile => {
-                    return <GameTile type={tile}/>
+                    return <GameTile tile={tile}/>
                 })
 
             }

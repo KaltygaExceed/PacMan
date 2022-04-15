@@ -1,0 +1,2 @@
+export const START_GAME = 'START_GAME'
+export const DEPLOY_PACMAN = 'DEPLOY_PACMAN'

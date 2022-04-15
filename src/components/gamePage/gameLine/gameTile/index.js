@@ -2,14 +2,14 @@ import React from 'react';
 import style from './gameTile.module.css'
 
 
-const GameTile = ({type}) => {
-    let selectedDiv = type === 0 ?
-        <div className={style.space}>{type === 0 && <div className={style.dot}/>}</div> : type === 1 ?
-            <div className={style.wall}/> : type === 2 ?
-                <div className={style.space}>{type === 2 && <div className={style.bigDot}/>}</div> : type === 3 ?
+const GameTile = ({tile}) => {
+    let selectedDiv = tile.type === 0 ?
+        <div className={style.space}>{tile.isPacManHere === true ? <div className={style.pacman}/> : tile.visited === false ? <div className={style.dot}/> : null}</div> : tile.type === 1 ?
+            <div className={style.wall}/> : tile.type === 2 ?
+                <div className={style.space}>{tile.isPacManHere === true ? <div className={style.pacman}/> : tile.visited === false ? <div className={style.bigDot}/> : null}</div> : tile.type === 3 ?
                     <div className={style.enemySpace}>
                         <div className={style.gate}/>
-                    </div> : type === 4 ? <div className={style.space}/> : <div className={style.space}/>
+                    </div> : tile.type === 4 ? <div className={style.space}/> : <div className={style.space}>{tile.isPacManHere === true ? <div className={style.pacman}/> : null}</div>
     return (
         selectedDiv
     );

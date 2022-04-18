@@ -4,7 +4,7 @@ let hs = localStorage.getItem('highscore') ? localStorage.getItem('highscore') :
 
 let map = modelMap.map((line, yIndex) => {
    return line.map((tile, xIndex) => {
-        let visited = !(tile === 0 || tile === 2 || tile === 5)
+        let visited = !(tile === 0 || tile === 2)
         let canVisit = tile === 0 || tile === 2 || tile === 5
         return {
             x: xIndex,
@@ -20,5 +20,6 @@ let map = modelMap.map((line, yIndex) => {
 export const initialState = {
     gameMap : map,
     score: 0,
-    highscore: hs
+    highscore: hs,
+    currentLocation: {x: 0, y: 0}
 }

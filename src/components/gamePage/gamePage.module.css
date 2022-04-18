@@ -12,14 +12,8 @@
     height: 100vh;
 }
 
-.gameContainer {
-    display: flex;
-}
 
 .map {
-    position: relative;
-    /*width: 560px;*/
-    /*height: 620px;*/
 }
 .score {
     border: 2px blue dotted;

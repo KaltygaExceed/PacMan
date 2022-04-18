@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf5afd55-2d5c-428a-b563-16a2bd2729c3" name="Default Changelist" comment="Update game map">
-      <change afterPath="$PROJECT_DIR$/src/components/units/pacman/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/initialState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bf5afd55-2d5c-428a-b563-16a2bd2729c3" name="Default Changelist" comment="Add logic to tiles and start making pacman moving">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/gameTile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/gameTile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gamePage/gamePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gamePage.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gamePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/units/pacman/index.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/initialState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initialPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/initialPage/initialPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/gameMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/gameMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/initialState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/initialState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../memory-card-game" />
@@ -77,19 +64,6 @@
       <recent name="$PROJECT_DIR$/src/redux" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,7 +77,8 @@
       <workItem from="1649941704432" duration="2614000" />
       <workItem from="1650016210443" duration="2505000" />
       <workItem from="1650019215443" duration="740000" />
-      <workItem from="1650020141599" duration="14162000" />
+      <workItem from="1650020141599" duration="14498000" />
+      <workItem from="1650262970079" duration="10225000" />
     </task>
     <task id="LOCAL-00001" summary="Update game map">
       <created>1650015513458</created>
@@ -112,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650015513458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add logic to tiles and start making pacman moving">
+      <created>1650036205470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650036205470</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update game map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update game map" />
+    <MESSAGE value="Add logic to tiles and start making pacman moving" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add logic to tiles and start making pacman moving" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,52 +1,50 @@
 import React, {useEffect, useState} from 'react';
 import style from "./gamePage.module.css"
 import GameLine from "./gameLine"
-// import {gameMap} from "../../utils/gameMap"
 import {useDispatch, useSelector} from "react-redux";
-import {deployPacman} from "../../redux/actions/actions";
-import Pacman from "../units/pacman";
+import {deployPacman, moveDown, moveLeft, moveRight, moveUp} from "../../redux/actions/actions";
+
 
 
 const GamePage = () => {
   const dispatch = useDispatch()
-  const {gameMap} = useSelector((state) => state)
+  const {gameMap, score} = useSelector((state) => state)
+
+
   useEffect(() => {
+    dispatch(deployPacman())
     const body = document.querySelector("body")
-    body.addEventListener('keydown', (event) => {
-      console.log(event.code)
-      if (event.code === "KeyW" || event.code === "ArrowUp") setPosition((oldPosition) => {
-        const newPosition = oldPosition
-        newPosition[1] = newPosition[1] - 1
-        return newPosition
-      })
+    body.addEventListener('keydown', event => {
+      switch (event.key) {
+        case "ArrowUp":
+          dispatch(moveUp())
+          break
+        case "ArrowDown":
+          dispatch(moveDown())
+          break
+        case "ArrowLeft":
+          dispatch(moveLeft())
+          break
+        case "ArrowRight":
+          dispatch(moveRight())
+          break
+      }
     })
-    //todo remove eventlistener
-
-    // return body.removeEventListener("keydown")
-  },[])
-
-
-  useEffect(()=> {
-      dispatch(deployPacman())
-  })
-
-  const [position, setPosition] = useState([17, 13])
-  // console.log(gameMap)
+  }, [])
 
   return (
     <div className={style.mainContainer}>
-      <div className={style.gameContainer}>
+
         <div className={style.score}>
-          game score <p className={style.scoreText}>00000</p>
+          game score <p className={style.scoreText}>{score}</p>
         </div>
         <div className={style.map}>
-          {gameMap.map(line =>  <GameLine tiles={line}/>)}
-          <Pacman position={position} />
+          {gameMap.map((line, index) => <GameLine tiles={line} key={index}/>)}
         </div>
         <div className={style.score}>
-          high score  <p className={style.scoreText}>00000</p>
+          high score <p className={style.scoreText}>00000</p>
         </div>
-      </div>
+
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './gameLine.module.css'
 import GameTile from './gameTile'
 
@@ -7,8 +6,8 @@ const GameLine = ({tiles}) => {
     return (
         <div className={style.line}>
             {
-                tiles.map(tile => {
-                    return <GameTile tile={tile}/>
+                tiles.map((tile, index) => {
+                    return <GameTile tile={tile} key={index}/>
                 })
 
             }

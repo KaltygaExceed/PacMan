@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf5afd55-2d5c-428a-b563-16a2bd2729c3" name="Default Changelist" comment="Add logic to tiles and start making pacman moving">
+    <list default="true" id="bf5afd55-2d5c-428a-b563-16a2bd2729c3" name="Default Changelist" comment="Update Readme">
+      <change afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/ghost.style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/pacman.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/wall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameLine.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameLine.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/gameTile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/gameTile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gamePage/gameLine/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gameLine/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gamePage/gamePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/gamePage.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gamePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gamePage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/units/pacman/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/initialState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/initialState.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/gameMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/gameMap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,7 +59,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../memory-card-game" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -78,7 +88,29 @@
       <workItem from="1650016210443" duration="2505000" />
       <workItem from="1650019215443" duration="740000" />
       <workItem from="1650020141599" duration="14498000" />
-      <workItem from="1650262970079" duration="10225000" />
+      <workItem from="1650262970079" duration="20673000" />
+      <workItem from="1650349168322" duration="15594000" />
+      <workItem from="1650435532895" duration="17621000" />
+      <workItem from="1650460074956" duration="6213000" />
+      <workItem from="1650521940072" duration="25060000" />
+      <workItem from="1650608350028" duration="16127000" />
+      <workItem from="1650867182419" duration="1674000" />
+      <workItem from="1650873175991" duration="1221000" />
+      <workItem from="1650953476523" duration="1201000" />
+      <workItem from="1651041493425" duration="1797000" />
+      <workItem from="1651127354775" duration="3136000" />
+      <workItem from="1651216670881" duration="43000" />
+      <workItem from="1651745287846" duration="269000" />
+      <workItem from="1652958148945" duration="103000" />
+      <workItem from="1652968119012" duration="19000" />
+      <workItem from="1653546422267" duration="14000" />
+      <workItem from="1653546494359" duration="6000" />
+      <workItem from="1653546566636" duration="201000" />
+      <workItem from="1653549538462" duration="32000" />
+      <workItem from="1653994886772" duration="28000" />
+      <workItem from="1653996041522" duration="37000" />
+      <workItem from="1654152990264" duration="67000" />
+      <workItem from="1654771263280" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="Update game map">
       <created>1650015513458</created>
@@ -94,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650036205470</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add move logic using redux">
+      <created>1650279281406</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650279281406</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update Readme">
+      <created>1650281020493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650281020493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +161,35 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update game map" />
     <MESSAGE value="Add logic to tiles and start making pacman moving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logic to tiles and start making pacman moving" />
+    <MESSAGE value="Add move logic using redux" />
+    <MESSAGE value="Update Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Readme" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/ghost.style.js</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/ghost.style.js</url>
+          <line>108</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/gamePage/gameLine/gameTile/ghost.style.js</url>
+          <line>72</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/gamePage/index.js</url>
+          <line>101</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

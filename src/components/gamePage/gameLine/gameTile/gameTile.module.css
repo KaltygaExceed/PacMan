@@ -1,47 +1,23 @@
 .space {
     box-sizing: border-box;
-    border: 1px black solid;
-    background: black;
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.enemySpace {
-    box-sizing: border-box;
-    background-image: url("https://star-hunter.ru/wp-content/uploads/2015/04/star-space-tile.jpg");
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gate{
-    width: 20px;
-    background: wheat;
-    height: 2px;
+    /*border: 1px greenyellow solid;*/
 }
 
 .wall {
     box-sizing: border-box;
-    background-image: url("https://preview.redd.it/r28nmgaqhyy11.png?width=640&format=png&auto=webp&s=03e773a6929f4380987c40f5c4e922fe8c13ea2a");
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
-}
-.image {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
+    /*border: 1px red solid;*/
 }
 
 .dot {
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
+    width: 2px;
+    height: 2px;
     background-color: wheat;
 }
 
@@ -49,7 +25,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: wheat;
+    background-color: #ffb7ff;
     animation-name: blinker;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1.0,0,0,1.0);
@@ -57,13 +33,26 @@
 }
 
 @keyframes blinker {
-    from { opacity: 1.0; }
-    to { opacity: 0; }
+    from {opacity: 1.0;}
+    to {opacity: 0;}
 }
 
-.pacman {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: yellow;
+
+.death {
+    width: 14px;
+    height: 14px;
+    object-fit: none;
+    object-position: -664px -4px;
+    animation: 1s deathAnim steps(11);
 }
+
+@keyframes deathAnim {
+    from {
+        object-position: -489px -1px;
+    }
+    to {
+        object-position: -664px -1px;
+    }
+}
+
+

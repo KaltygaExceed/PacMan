@@ -1,7 +1,5 @@
 import style from './gameLine.module.css'
 import GameTile from './gameTile'
-
-
 const GameLine = ({tiles}) => {
     return (
         <div className={style.line}>
@@ -9,7 +7,6 @@ const GameLine = ({tiles}) => {
                 tiles.map((tile, index) => {
                     return <GameTile tile={tile} key={index}/>
                 })
-
             }
         </div>
     );

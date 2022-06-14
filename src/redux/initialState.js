@@ -12,14 +12,45 @@ let map = modelMap.map((line, yIndex) => {
             type: tile,
             canVisit: canVisit,
             visited: visited,
-            isPacManHere: false
+            isPacManHere: false,
+            ghostHere: null
         }
     })
 })
 
 export const initialState = {
-    gameMap : map,
-    score: 0,
-    highscore: hs,
-    currentLocation: {x: 0, y: 0}
+  gameState: 'GAME',
+  gameMap : map,
+  score: 0,
+  highscore: hs,
+  pacman: {
+    currentLocation: {y: 0, x: 0},
+    direction: 'none'
+  },
+  ghosts: {
+    RED: {
+      currentLocation: {y:1, x: 1},
+      prevLocation: {y:1, x: 1},
+      type: 'RED',
+      direction: 'Down'
+    },
+    PINK: {
+      currentLocation: {y: 0, x: 0},
+      prevLocation: {y:0, x: 0},
+      type: 'PINK',
+      direction: 'Down'
+    },
+    BLUE: {
+      currentLocation: {y: 0, x: 0},
+      prevLocation: {y:0, x: 0},
+      type: 'BLUE',
+      direction: 'Down'
+    },
+    ORANGE: {
+      currentLocation: {y: 0, x: 0},
+      prevLocation: {y:0, x: 0},
+      type: 'ORANGE',
+      direction: 'Down'
+    }
+  }
 }

@@ -5,23 +5,57 @@
 }
 
 
-.mainContainer {
+.gameContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("/src/assets/sprites.png");
+    object-fit: none;
+    background-position: -400px 0;
+    background-size: 304%;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     height: 100vh;
 }
 
-
-.map {
+.button {
+    background: none;
+    font-family: arcadeClassic, serif;
+    font-size: 34px;
+    color: white;
+    border: none;
+    word-spacing: 5px;
 }
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.buttonContainer {
+    height: 40px;
+}
+
 .score {
     border: 2px blue dotted;
     box-sizing: border-box;
     border-radius: 5px;
     text-align: center;
     width: 80px;
-    height: 620px;
+    height: 434px;
     padding: 35px;
     margin: 20px;
     color: #f982ff;

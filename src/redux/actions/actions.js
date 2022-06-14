@@ -16,5 +16,23 @@ export const moveLeft = () => ({
 export const moveRight = () => ({
   type: 'MOVE_RIGHT'
 })
-
+export const setHighscore = () => ({
+  type: 'SET_HIGHSCORE'
+})
+export const continueGame = () => ({
+  type: 'CONTINUE_GAME'
+})
+export const deployGhosts = () => ({
+  type: 'DEPLOY_GHOSTS'
+})
+export const changeDirection = (newDirection) => ({
+  type: 'CHANGE_DIRECTION',
+  payload: newDirection
+})
+export const ghostsMoving = () => ({
+  type: 'GHOSTS_MOVING'
+})
+export const endGame = () => ({
+  type: 'END_GAME'
+})
 
